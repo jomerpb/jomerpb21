@@ -37,6 +37,19 @@ GAME_ID_BY_TOKEN = [
     ('6/42', 'lotto-6-42'),
 ]
 
+# The dashboard carries the five 6-number draws and EZ2 only. The source also
+# publishes 3D, 4D, 6D and STL, which are dropped here rather than in the
+# frontend so they never reach the saved results. "2d-lotto" is a prefix
+# because EZ2 is drawn three times a day, one id per draw time.
+KEPT_GAMES = (
+    'ultra-lotto-6-58',
+    'grand-lotto-6-55',
+    'super-lotto-6-49',
+    'mega-lotto-6-45',
+    'lotto-6-42',
+    '2d-lotto',
+)
+
 # Rows labelling the combination in a jackpot game's table.
 COMBINATION_LABELS = ('winning combination', 'combination')
 
@@ -168,9 +181,16 @@ def parse_results(html):
 
 def add_result(games, slug, entry):
     """Keep the newest draw when a game appears more than once on the page."""
+    if not is_kept(slug):
+        return
+
     current = games.get(slug)
     if current is None or entry['draw_date'] > current['draw_date']:
         games[slug] = entry
+
+
+def is_kept(slug):
+    return any(slug == kept or slug.startswith(kept + '-') for kept in KEPT_GAMES)
 
 
 def load_existing_games():
@@ -204,7 +224,9 @@ def main():
 
     # Merge over the saved results so every game keeps its most recent draw,
     # even on days when that game isn't drawn at all.
-    games = load_existing_games()
+    # Filtered too, so games dropped from KEPT_GAMES don't linger in the file.
+    games = {slug: entry for slug, entry in load_existing_games().items()
+             if is_kept(slug)}
     for slug, entry in latest.items():
         saved = games.get(slug)
         if saved is None or entry['draw_date'] >= saved.get('draw_date', ''):

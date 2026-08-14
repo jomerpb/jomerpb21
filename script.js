@@ -7,14 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 'super-lotto-6-49', name: 'Super Lotto 6/49' },
         { id: 'mega-lotto-6-45', name: 'Mega Lotto 6/45' },
         { id: 'lotto-6-42', name: 'Lotto 6/42' },
-        { id: '6d-lotto', name: '6D Lotto' },
-        { id: '4d-lotto', name: '4D Lotto' },
-        { id: '3d-lotto-2pm', name: '3D Lotto 2PM' },
-        { id: '3d-lotto-5pm', name: '3D Lotto 5PM' },
-        { id: '3d-lotto-9pm', name: '3D Lotto 9PM' },
-        { id: '2d-lotto-2pm', name: '2D Lotto 2PM' },
-        { id: '2d-lotto-5pm', name: '2D Lotto 5PM' },
-        { id: '2d-lotto-9pm', name: '2D Lotto 9PM' }
+        { id: '2d-lotto-2pm', name: 'EZ2 2PM' },
+        { id: '2d-lotto-5pm', name: 'EZ2 5PM' },
+        { id: '2d-lotto-9pm', name: 'EZ2 9PM' }
     ];
 
     // --- LIVE DATA FETCHING ---

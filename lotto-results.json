@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-14T21:33:19+08:00",
+    "generated_at": "2026-08-14T21:38:57+08:00",
     "source": "https://www.lottopcso.com/",
     "games": {
         "2d-lotto-2pm": {
@@ -23,41 +23,6 @@
             "jackpot": "",
             "winners": null
         },
-        "3d-lotto-2pm": {
-            "name": "3D Lotto 2:00 PM",
-            "combination": "1-0-5",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
-            "winners": null
-        },
-        "3d-lotto-5pm": {
-            "name": "3D Lotto 5:00 PM",
-            "combination": "5-4-6",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
-            "winners": null
-        },
-        "3d-lotto-9pm": {
-            "name": "3D Lotto 9:00 PM",
-            "combination": "5-0-3",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
-            "winners": null
-        },
-        "4d-lotto": {
-            "name": "4D Lotto",
-            "combination": "0-0-5-4",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
-            "winners": null
-        },
-        "6d-lotto": {
-            "name": "6D Lotto",
-            "combination": "9-0-2-3-3-0",
-            "draw_date": "2026-08-13",
-            "jackpot": "₱6,214,467.72",
-            "winners": 0
-        },
         "grand-lotto-6-55": {
             "name": "6/55 Grand Lotto",
             "combination": "53-36-21-08-46-43",
@@ -77,48 +42,6 @@
             "combination": "29-34-32-09-38-19",
             "draw_date": "2026-08-14",
             "jackpot": "₱15,000,000.00",
-            "winners": null
-        },
-        "stl-swer3-lapu-lapu-city-1030am": {
-            "name": "STL Swer3 (Lapu-Lapu City) 10:30 AM",
-            "combination": "9-3-7",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
-            "winners": null
-        },
-        "stl-swer3-lapu-lapu-city-3pm": {
-            "name": "STL Swer3 (Lapu-Lapu City) 3:00 PM",
-            "combination": "2-1-8",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
-            "winners": null
-        },
-        "stl-swer3-lapu-lapu-city-7pm": {
-            "name": "STL Swer3 (Lapu-Lapu City) 7:00 PM",
-            "combination": "3-1-7",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
-            "winners": null
-        },
-        "stl-swer3-mandaue-city-1030am": {
-            "name": "STL Swer3 (Mandaue City) 10:30 AM",
-            "combination": "6-1-9",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
-            "winners": null
-        },
-        "stl-swer3-mandaue-city-3pm": {
-            "name": "STL Swer3 (Mandaue City) 3:00 PM",
-            "combination": "3-4-6",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
-            "winners": null
-        },
-        "stl-swer3-mandaue-city-7pm": {
-            "name": "STL Swer3 (Mandaue City) 7:00 PM",
-            "combination": "1-0-2",
-            "draw_date": "2026-08-14",
-            "jackpot": "",
             "winners": null
         },
         "super-lotto-6-49": {
