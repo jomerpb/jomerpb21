@@ -3,89 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PH Lotto Analytics | Data-Driven Insights</title>
+    <title>PH Lotto Analytics | Live Data</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">LottoStat<span>PH</span></div>
         <ul class="nav-links">
             <li><a href="#dashboard">Dashboard</a></li>
-            <li><a href="#analysis">Hot/Cold Numbers</a></li>
             <li><a href="#generator">Smart Generator</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <h1>Philippine Lottery Analysis</h1>
-            <p>Track frequencies, analyze patterns, and generate data-informed combinations for PCSO lotto games.</p>
+            <h1>Live PCSO Lottery Analysis</h1>
+            <p>Automatically updating data-driven insights for Philippine lotto games.</p>
         </div>
     </header>
 
-    <!-- Dashboard Section -->
     <section id="dashboard" class="section">
-        <h2>Recent Draw Analysis (Mock Data)</h2>
+        <h2>Latest Draw Results</h2>
+        <p class="subtitle" id="last-updated">Fetching live data...</p>
+        
         <div class="grid">
             <div class="card">
                 <h3>Ultra Lotto 6/58</h3>
-                <div class="balls">
-                    <span class="ball">08</span>
-                    <span class="ball">14</span>
-                    <span class="ball">22</span>
-                    <span class="ball">35</span>
-                    <span class="ball">41</span>
-                    <span class="ball">58</span>
+                <div id="draw-58" class="balls">
+                    <!-- JS will inject balls here -->
+                    <div class="loader">Loading...</div>
                 </div>
-                <p class="meta">Draw Date: Aug 14, 2026</p>
+                <p class="meta" id="date-58"></p>
             </div>
+            
             <div class="card">
                 <h3>Grand Lotto 6/55</h3>
-                <div class="balls">
-                    <span class="ball">03</span>
-                    <span class="ball">11</span>
-                    <span class="ball">19</span>
-                    <span class="ball">27</span>
-                    <span class="ball">44</span>
-                    <span class="ball">52</span>
+                <div id="draw-55" class="balls">
+                    <!-- JS will inject balls here -->
+                    <div class="loader">Loading...</div>
                 </div>
-                <p class="meta">Draw Date: Aug 12, 2026</p>
+                <p class="meta" id="date-55"></p>
             </div>
         </div>
     </section>
 
-    <!-- Analysis Section -->
-    <section id="analysis" class="section bg-light">
-        <h2>Frequency Analysis: Top 6/58 Numbers</h2>
-        <p class="subtitle">Based on the last 100 draws</p>
-        <div class="analysis-grid">
-            <div class="stat-box hot">
-                <h4>Hot Numbers</h4>
-                <p>These numbers have appeared most frequently.</p>
-                <div class="number-list">
-                    <span class="badge hot-badge">22 (15x)</span>
-                    <span class="badge hot-badge">08 (14x)</span>
-                    <span class="badge hot-badge">41 (12x)</span>
-                    <span class="badge hot-badge">55 (11x)</span>
-                </div>
-            </div>
-            <div class="stat-box cold">
-                <h4>Cold Numbers</h4>
-                <p>These numbers have not been drawn recently.</p>
-                <div class="number-list">
-                    <span class="badge cold-badge">13 (1x)</span>
-                    <span class="badge cold-badge">04 (2x)</span>
-                    <span class="badge cold-badge">37 (2x)</span>
-                    <span class="badge cold-badge">49 (3x)</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Generator Section -->
-    <section id="generator" class="section">
+    <section id="generator" class="section bg-light">
         <h2>Smart Number Generator</h2>
         <p class="subtitle">Select your game to generate a random 6-number combination.</p>
         
@@ -97,21 +59,14 @@
                 <option value="55">Grand Lotto 6/55</option>
                 <option value="58" selected>Ultra Lotto 6/58</option>
             </select>
-            
             <button id="generate-btn" class="btn">Generate Combination</button>
-            
-            <div id="result-container" class="balls result-balls hidden">
-                <!-- JavaScript will inject balls here -->
-            </div>
+            <div id="result-container" class="balls result-balls hidden"></div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p><strong>Disclaimer:</strong> This website is for educational and analytical purposes only. Lottery games are based entirely on chance. Analyzing past data does not guarantee future results. Play responsibly.</p>
         <p>&copy; 2026 LottoStat PH Analytics.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
