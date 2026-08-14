@@ -1,37 +1,47 @@
 import json
 import datetime
-import os
-
-# NOTE: In a real GitHub action, you would use a scraping library like 'PCSOLotto-Webscraper'
-# or BeautifulSoup4 to parse https://www.pcso.gov.ph/.
-# For this script, we output a standard JSON format that the frontend expects.
+from PCSOLotto import PCSOLotto
 
 def scrape_latest_results():
-    # Placeholder for actual scraping logic. 
-    # Example utilizing the 'PCSOLotto-Webscraper' package from PyPI
-    # from PCSOLotto import PCSOLotto
-    # lotto = PCSOLotto()
-    # results = lotto.results_today()
+    print("Initializing PCSO Lotto Scraper...")
     
-    # Simulating data that a scraper would return:
-    data = {
-        "6/58": {
-            "date": datetime.datetime.now().strftime("%b %d, %Y"),
-            "combination": "12-24-35-41-48-58",
-            "jackpot": "Php 50,000,000.00"
-        },
-        "6/55": {
-            "date": datetime.datetime.now().strftime("%b %d, %Y"),
-            "combination": "05-11-20-27-33-49",
-            "jackpot": "Php 29,000,000.00"
-        }
-    }
-    
-    # Save the scraped data directly to the repository folder
-    with open('lotto-results.json', 'w') as f:
-        json.dump(data, f, indent=4)
+    try:
+        lotto = PCSOLotto()
         
-    print("Successfully generated lotto-results.json")
+        # Attempt to fetch today's results (Usually posted after 10 PM)
+        scraped_data = lotto.results_today()
+        
+        # Fallback: If tonight's results aren't up yet, grab the default recent draws
+        if not scraped_data:
+            print("Tonight's results not yet posted. Fetching recent defaults...")
+            scraped_data = lotto.results_default_pcso()
+        
+        formatted_data = {}
+        today_date = datetime.datetime.now().strftime("%b %d, %Y")
+        
+        # Loop through the scraped data to extract only the 6/58 and 6/55 games
+        for game_name, game_details in scraped_data.items():
+            if '6/58' in game_name:
+                formatted_data["6/58"] = {
+                    "date": today_date,
+                    "combination": game_details.get('Winning Numbers', ''),
+                    "jackpot": game_details.get('Jackpot Prize', '')
+                }
+            elif '6/55' in game_name:
+                formatted_data["6/55"] = {
+                    "date": today_date,
+                    "combination": game_details.get('Winning Numbers', ''),
+                    "jackpot": game_details.get('Jackpot Prize', '')
+                }
+        
+        # Write the formatted data into the JSON file that our website reads
+        with open('lotto-results.json', 'w') as f:
+            json.dump(formatted_data, f, indent=4)
+            
+        print("Successfully generated lotto-results.json with live data!")
+
+    except Exception as e:
+        print(f"Error scraping data: {e}")
 
 if __name__ == "__main__":
     scrape_latest_results()
