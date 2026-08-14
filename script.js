@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: '3d-lotto-2pm', name: '3D Lotto 2PM' },
         { id: '3d-lotto-5pm', name: '3D Lotto 5PM' },
         { id: '3d-lotto-9pm', name: '3D Lotto 9PM' },
-        { id: '2d-lotto-11am', name: '2D Lotto 11AM' },
-        { id: '2d-lotto-4pm', name: '2D Lotto 4PM' },
+        { id: '2d-lotto-2pm', name: '2D Lotto 2PM' },
+        { id: '2d-lotto-5pm', name: '2D Lotto 5PM' },
         { id: '2d-lotto-9pm', name: '2D Lotto 9PM' }
     ];
 
@@ -33,6 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
             status.textContent = data.generated_at
                 ? `Last synchronized: ${formatDate(data.generated_at.slice(0, 10))}`
                 : 'Last synchronized: unknown';
+
+            // These results are republished by a third party, not read from
+            // PCSO directly, so say where they came from.
+            if (data.source) {
+                status.appendChild(document.createElement('br'));
+                const credit = document.createElement('small');
+                credit.textContent = `Source: ${new URL(data.source).hostname}`;
+                status.appendChild(credit);
+            }
 
         } catch (error) {
             console.error("Error fetching live data:", error);
