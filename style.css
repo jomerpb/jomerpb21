@@ -36,7 +36,13 @@ body { background-color: var(--light-gray); color: #333; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
 .card { background: var(--white); padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid var(--primary); }
 .card h3 { margin-bottom: 1.5rem; color: var(--primary); }
+.card-pending { border-top-color: #ccd2db; }
+.card-pending h3 { color: #7c8598; }
+.pending { color: #98a1b0; font-size: 0.95rem; padding: 0.75rem 0; }
+.jackpot { margin-top: 1.5rem; font-weight: bold; color: var(--dark); }
 .meta { font-size: 0.9rem; color: #888; margin-top: 1.5rem; }
+.jackpot + .meta { margin-top: 0.4rem; }
+.loader { text-align: center; color: #888; grid-column: 1 / -1; }
 
 /* Lotto Balls */
 .balls { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }

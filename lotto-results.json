@@ -1,12 +1,19 @@
 {
-    "6/58": {
-        "date": "Aug 14, 2026",
-        "combination": "08-14-22-35-41-58",
-        "jackpot": "Php 50,000,000.00"
-    },
-    "6/55": {
-        "date": "Aug 12, 2026",
-        "combination": "03-11-19-27-44-52",
-        "jackpot": "Php 30,000,000.00"
+    "generated_at": "2026-08-14T21:00:00+08:00",
+    "games": {
+        "grand-lotto-6-55": {
+            "name": "Grand Lotto 6/55",
+            "combination": "03-11-19-27-44-52",
+            "draw_date": "2026-08-12",
+            "jackpot": "Php 30,000,000.00",
+            "winners": 0
+        },
+        "ultra-lotto-6-58": {
+            "name": "Ultra Lotto 6/58",
+            "combination": "08-14-22-35-41-58",
+            "draw_date": "2026-08-14",
+            "jackpot": "Php 50,000,000.00",
+            "winners": 0
+        }
     }
 }

@@ -26,24 +26,9 @@
         <h2>Latest Draw Results</h2>
         <p class="subtitle" id="last-updated">Fetching live data...</p>
         
-        <div class="grid">
-            <div class="card">
-                <h3>Ultra Lotto 6/58</h3>
-                <div id="draw-58" class="balls">
-                    <!-- JS will inject balls here -->
-                    <div class="loader">Loading...</div>
-                </div>
-                <p class="meta" id="date-58"></p>
-            </div>
-            
-            <div class="card">
-                <h3>Grand Lotto 6/55</h3>
-                <div id="draw-55" class="balls">
-                    <!-- JS will inject balls here -->
-                    <div class="loader">Loading...</div>
-                </div>
-                <p class="meta" id="date-55"></p>
-            </div>
+        <div class="grid" id="results-grid">
+            <!-- JS injects one card per game here -->
+            <p class="loader">Loading results...</p>
         </div>
     </section>
 
