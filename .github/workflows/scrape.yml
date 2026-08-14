@@ -22,7 +22,7 @@ jobs:
           python-version: '3.10'
           
       - name: Install Dependencies
-        run: pip install PCSOLotto-Webscraper
+        run: pip install PCSOLotto-Webscraper pytz
         
       - name: Run Scraper Script
         run: python scraper.py
