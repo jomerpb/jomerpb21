@@ -1,62 +1,62 @@
 {
-    "generated_at": "2026-08-14T22:45:14+08:00",
+    "generated_at": "2026-08-16T22:15:22+08:00",
     "source": "https://www.lottopcso.com/",
     "games": {
         "2d-lotto-2pm": {
             "name": "2D Lotto 2:00 PM",
-            "combination": "20-30",
-            "draw_date": "2026-08-14",
+            "combination": "30-13",
+            "draw_date": "2026-08-16",
             "jackpot": "",
             "winners": null
         },
         "2d-lotto-5pm": {
             "name": "2D Lotto 5:00 PM",
-            "combination": "08-25",
-            "draw_date": "2026-08-14",
+            "combination": "17-13",
+            "draw_date": "2026-08-16",
             "jackpot": "",
             "winners": null
         },
         "2d-lotto-9pm": {
             "name": "2D Lotto 9:00 PM",
-            "combination": "22-12",
-            "draw_date": "2026-08-14",
+            "combination": "07-13",
+            "draw_date": "2026-08-16",
             "jackpot": "",
             "winners": null
         },
         "grand-lotto-6-55": {
             "name": "6/55 Grand Lotto",
-            "combination": "53-36-21-08-46-43",
-            "draw_date": "2026-08-12",
-            "jackpot": "₱128,414,048.39",
+            "combination": "31-13-26-22-39-47",
+            "draw_date": "2026-08-15",
+            "jackpot": "₱133,654,580.60",
             "winners": 0
         },
         "lotto-6-42": {
             "name": "6/42 Lotto",
-            "combination": "20-21-14-41-06-12",
-            "draw_date": "2026-08-13",
-            "jackpot": "₱31,911,511.47",
-            "winners": 1
+            "combination": "12-08-15-26-28-37",
+            "draw_date": "2026-08-15",
+            "jackpot": "₱10,000,000.00",
+            "winners": 0
         },
         "mega-lotto-6-45": {
             "name": "6/45 Mega Lotto",
             "combination": "29-34-32-09-38-19",
             "draw_date": "2026-08-14",
             "jackpot": "₱15,000,000.00",
-            "winners": null
+            "winners": 0
         },
         "super-lotto-6-49": {
             "name": "6/49 Super Lotto",
-            "combination": "03-39-38-23-26-14",
-            "draw_date": "2026-08-13",
-            "jackpot": "₱25,165,541.16",
+            "combination": "49-15-06-26-30-12",
+            "draw_date": "2026-08-16",
+            "jackpot": "₱25,229,356.15",
             "winners": 0
         },
         "ultra-lotto-6-58": {
             "name": "6/58 Ultra Lotto",
-            "combination": "28-33-10-12-22-23",
-            "draw_date": "2026-08-14",
-            "jackpot": "₱206,672,120.91",
-            "winners": null
+            "combination": "30-37-17-47-02-09",
+            "draw_date": "2026-08-16",
+            "jackpot": "₱213,102,641.85",
+            "winners": 0
         }
     }
 }
