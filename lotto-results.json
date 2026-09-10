@@ -1,25 +1,25 @@
 {
-    "generated_at": "2026-09-10T01:27:22+08:00",
+    "generated_at": "2026-09-11T01:25:27+08:00",
     "source": "https://www.lottopcso.com/",
     "games": {
         "2d-lotto-2pm": {
             "name": "2D Lotto 2:00 PM",
-            "combination": "23-16",
-            "draw_date": "2026-09-09",
+            "combination": "20-06",
+            "draw_date": "2026-09-10",
             "jackpot": "",
             "winners": null
         },
         "2d-lotto-5pm": {
             "name": "2D Lotto 5:00 PM",
-            "combination": "15-30",
-            "draw_date": "2026-09-09",
+            "combination": "14-05",
+            "draw_date": "2026-09-10",
             "jackpot": "",
             "winners": null
         },
         "2d-lotto-9pm": {
             "name": "2D Lotto 9:00 PM",
-            "combination": "06-14",
-            "draw_date": "2026-09-09",
+            "combination": "17-08",
+            "draw_date": "2026-09-10",
             "jackpot": "",
             "winners": null
         },
@@ -32,9 +32,9 @@
         },
         "lotto-6-42": {
             "name": "6/42 Lotto",
-            "combination": "14-16-26-27-11-33",
-            "draw_date": "2026-09-08",
-            "jackpot": "₱31,240,819.58",
+            "combination": "23-12-29-27-07-33",
+            "draw_date": "2026-09-10",
+            "jackpot": "₱34,992,150.14",
             "winners": 0
         },
         "mega-lotto-6-45": {
@@ -46,9 +46,9 @@
         },
         "super-lotto-6-49": {
             "name": "6/49 Super Lotto",
-            "combination": "17-27-18-35-06-31",
-            "draw_date": "2026-09-08",
-            "jackpot": "₱25,000,000.00",
+            "combination": "29-05-40-18-30-34",
+            "draw_date": "2026-09-10",
+            "jackpot": "₱25,056,258.30",
             "winners": 0
         },
         "ultra-lotto-6-58": {
